@@ -20,7 +20,7 @@
 
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn color="primary" @click="$router.push('/menu')">Login</v-btn>
+                <v-btn color="primary" @click="$router.push('/cadastro')">Login</v-btn>
               </v-card-actions>
 
             </v-card>
@@ -36,3 +36,14 @@ export default {
     
 }
 </script>
+
+<style >
+#inspire{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7abcff+0,228cf7+52,4096ee+100 */
+  background: #7abcff; /* Old browsers */
+  background: -moz-linear-gradient(top, #7abcff 0%, #228cf7 52%, #4096ee 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #7abcff 0%,#228cf7 52%,#4096ee 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #7abcff 0%,#228cf7 52%,#4096ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+}
+</style>

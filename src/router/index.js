@@ -3,8 +3,9 @@ import Router from 'vue-router'
 
 import Layout from '../components/Layout'
 import Login from '../pages/Login'
-import Menu from '../pages/Menu'
 import Cadastro from '../pages/Cadastro'
+import Credito from '../pages/Credito'
+import Debito from '../pages/Debito'
 
 Vue.use(Router)
 
@@ -20,10 +21,6 @@ const router = new Router({
         component: Layout,
         children:[
           {
-            path: '/menu',
-            component: Menu
-          },
-          {
             path: '/cadastro',
             component: Cadastro
           },
@@ -32,9 +29,11 @@ const router = new Router({
           },
           {
             path: '/credito',
+            component: Credito
           },
           {
             path: '/debito',
+            component: Debito
           }
         ]
       },

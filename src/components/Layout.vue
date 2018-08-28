@@ -7,11 +7,13 @@
 
         <v-card height="100%" flat>
         
-            <div class="headline text-xs-center pa-5">
+            <div class="headline text-xs-center">
                 <v-content>
                     <v-container fluid>
                         <v-layout align-center justify-center>
-                            <router-view></router-view>
+                            <v-flex xs12>
+                                <router-view></router-view>
+                            </v-flex>
                         </v-layout>
                     </v-container>
                 </v-content>
