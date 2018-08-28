@@ -1,9 +1,13 @@
 <template>
-    <h1>Ola Mundo</h1>
+    
 </template>
 
 <script>
 export default {
-    
+    data () {
+      return {
+        bottomNav: 'recent'
+      }
+    }
 }
 </script>

@@ -26,6 +26,15 @@ const router = new Router({
           {
             path: '/cadastro',
             component: Cadastro
+          },
+          {
+            path: '/relatorio',
+          },
+          {
+            path: '/credito',
+          },
+          {
+            path: '/debito',
           }
         ]
       },
