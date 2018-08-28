@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import Layout from '../components/Layout'
 import Login from '../pages/Login'
 import Menu from '../pages/Menu'
+import Cadastro from '../pages/Cadastro'
 
 Vue.use(Router)
 
@@ -21,6 +22,10 @@ const router = new Router({
           {
             path: '/menu',
             component: Menu
+          },
+          {
+            path: '/cadastro',
+            component: Cadastro
           }
         ]
       },
