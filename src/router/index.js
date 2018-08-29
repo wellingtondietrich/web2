@@ -6,6 +6,9 @@ import Login from '../pages/Login'
 import Cadastro from '../pages/Cadastro'
 import Credito from '../pages/Credito'
 import Debito from '../pages/Debito'
+import Dashboard from '../pages/Dashboard'
+import Perfil from '../pages/Perfil'
+import Relatorio from '../pages/Relatorio'
 
 Vue.use(Router)
 
@@ -17,23 +20,32 @@ const router = new Router({
         component: Login
       },
       {
+        path: '/cadastro',
+        component: Cadastro
+      },
+      {
         path: '/',
         component: Layout,
         children:[
-          {
-            path: '/cadastro',
-            component: Cadastro
-          },
-          {
-            path: '/relatorio',
-          },
           {
             path: '/credito',
             component: Credito
           },
           {
+            path: '/dashboard',
+            component: Dashboard
+          },
+          {
             path: '/debito',
             component: Debito
+          },
+          {
+            path: '/perfil',
+            component: Perfil
+          },
+          {
+            path: '/relatorio',
+            component: Relatorio
           }
         ]
       },
