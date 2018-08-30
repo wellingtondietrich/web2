@@ -4,14 +4,6 @@ api_version: 1
 threadsafe: yes
 
 handlers:
-- url: /
-  static_files: dist/index.html
-  upload: dist/index.html
-
-- url: /favicon.ico
-  static_files: dist/favicon.ico
-  upload: dist/favicon.ico
-
 - url: /css/(.+)
   static_files:  dist/css/\1
   upload: dist/css/(.*)
@@ -19,6 +11,14 @@ handlers:
 - url: /js/(.+)
   static_files:  dist/js/\1
   upload: dist/js/(.*)
+
+- url: /
+  static_files: dist/index.html
+  upload: dist/index.html
+
+- url: /favicon.ico
+  static_files: dist/favicon.ico
+  upload: dist/favicon.ico
 
 libraries:
 - name: webapp2
