@@ -13,11 +13,11 @@ handlers:
   upload: dist/favicon.ico
 
 - url: /css/(.+)
-  static_dir: dist/css/\1
+  static_dir: dist/css
   upload: dist/css/(.*)
 
 - url: /js/(.+)
-  static_dir: dist/js/\1
+  static_dir: dist/js
   upload: dist/js/(.*)
 
 libraries:
