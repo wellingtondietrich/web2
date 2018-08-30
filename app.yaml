@@ -12,12 +12,12 @@ handlers:
   static_files: dist/favicon.ico
   upload: dist/favicon.ico
 
-- url: /css
-  static_dir: dist/css
+- url: /css/(.+)
+  static_files:  dist/css/\1
   upload: dist/css/(.*)
 
-- url: /js
-  static_dir: dist/js
+- url: /js/(.+)
+  static_files:  dist/js/\1
   upload: dist/js/(.*)
 
 libraries:
