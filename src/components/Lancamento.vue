@@ -1,10 +1,12 @@
 <template>
-    <v-card height="100%" >
-        <v-card-title primary-title>
-            <div class="headline">{{title}}</div>
+    <v-card height="100%">
+
+        <v-card-title class="py-0" primary-title>
+            <v-card-text class="title" v-text="title" /> 
         </v-card-title>
+
         <v-divider />
-        <v-container grid-list-xs>
+        <v-container grid-list-xs id="lancamento">
             <v-layout row wrap>
                 <v-flex xs12>
                     <v-text-field
@@ -63,7 +65,7 @@
         <v-divider />
         <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn flat color="success" @click="done()">Adicionar</v-btn>
+            <v-btn flat color="default" @click="done()">Adicionar</v-btn>
         </v-card-actions>
     </v-card>
 </template>
@@ -114,3 +116,9 @@ export default {
     }
 }
 </script>
+
+<style>
+ #lancamento{
+     height: calc(100vh - 255px)
+ }
+</style>

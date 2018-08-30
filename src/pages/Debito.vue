@@ -1,5 +1,5 @@
 <template>
-    <app-lancamento :type="1" title="Débito" name="débito" :categorias='categorias' @done="''"/>
+    <app-lancamento :type="1" title="Débito" name="débito" :categorias='categorias' @done="() => {}"/>
 </template>
 
 <script>

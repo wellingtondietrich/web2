@@ -1,102 +1,96 @@
 <template>
-  <v-parallax height="950" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
-  	  <v-data-table
-    :headers="headers"
-    :items="desserts"
-    hide-actions
-    class="elevation-1"
-  >
-    <template slot="items" slot-scope="props">
-      <td>{{ props.item.mes }}</td>
-      <td class="text-xs-left">{{ props.item.total }}</td>
-      <td class="text-xs-left">{{ props.item.saldo }}</td>
-      <td class="text-xs-left">{{ props.item.economia }}</td>
-    </template>
-  </v-data-table>
-  </v-parallax>
+  <v-flex xs12>
+    <v-container grid-list-xs ma-0 pa-0>
+      <v-layout row wrap>
+        <v-flex xs12 class="mb-3">
+          <v-card color="green" class="white--text">
+            <v-layout>
+              <v-flex xs4>
+                <v-container grid-list-xs>
+                  <v-layout row wrap align-center>
+                    <v-flex xs12>
+                      <v-icon size="75" >attach_money</v-icon>
+                    </v-flex>
+                  </v-layout>
+                </v-container>
+              </v-flex>
+
+              <v-divider vertical />
+
+              <v-flex xs8>
+                <v-card-title primary-title>
+                  <div>
+                      <div class="headline">Cedito corrente</div>
+                      <div class="subheading">R$ 90.00</div>
+                  </div>
+                </v-card-title>
+              </v-flex>
+            </v-layout>
+          </v-card>
+        </v-flex>
+
+        <v-flex xs12 class="mb-3">
+          <v-card color="red" class="white--text">
+            <v-layout>
+              <v-flex xs4>
+                <v-container grid-list-xs>
+                  <v-layout row wrap align-center>
+                    <v-flex xs12>
+                      <v-icon size="75" >money_off</v-icon>
+                    </v-flex>
+                  </v-layout>
+                </v-container>
+              </v-flex>
+
+              <v-divider vertical />
+
+              <v-flex xs8>
+                <v-card-title primary-title>
+                  <div>
+                      <div class="headline">Debito corrente</div>
+                      <div class="subheading">R$ 45.00</div>
+                  </div>
+                </v-card-title>
+              </v-flex>
+            </v-layout>
+          </v-card>
+        </v-flex>
+
+        <v-flex xs12>
+          <v-card color="blue" class="white--text">
+            <v-layout>
+              <v-flex xs4>
+                <v-container grid-list-xs>
+                  <v-layout row wrap align-center>
+                    <v-flex xs12>
+                      <v-icon size="75" >monetization_on</v-icon>
+                    </v-flex>
+                  </v-layout>
+                </v-container>
+              </v-flex>
+
+              <v-divider vertical />
+
+              <v-flex xs8>
+                <v-card-title primary-title>
+                  <div>
+                      <div class="headline" >Valor disponível</div>
+                      <div class="subheading">R$ 45.00</div>
+                  </div>
+                </v-card-title>
+              </v-flex>
+            </v-layout>
+          </v-card>
+        </v-flex>
+      </v-layout>
+
+    </v-container>
+  </v-flex>
+
 </template>
 
 <script>
   export default {
-    data () {
-      return {
-        headers: [
-          {
-            text: 'Meses',
-            align: 'center',
-            sortable: false,
-            value: 'mes'
-          },
-          { text: 'Total', value: 'total' },
-          { text: 'Saldo', value: 'saldo' },
-          { text: 'Economia (%)', value: 'economia' }
-        ],
-        desserts: [
-          {
-            value: false,
-            mes: 'Janeiro',
-            total: 'R$ 159,00',
-            saldo: 4.0,
-            economia: '1%'
-          },
-          {
-            value: false,
-            mes: 'Fevereiro',
-            total: 'R$ 237,00',
-            saldo: 4.3,
-            economia: '1%'
-          },
-          {
-            value: false,
-            mes: 'Março',
-            total: 'R$ 262,00',
-            saldo: 6.0,
-            economia: '7%'
-          },
-          {
-            value: false,
-            mes: 'Abril',
-            total: 'R$ 305,00',
-            saldo: 4.3,
-            economia: '8%'
-          },
-          {
-            value: false,
-            mes: 'Maio',
-            total: 'R$ 356,00',
-            saldo: 3.9,
-            economia: '16%'
-          },
-          {
-            value: false,
-            mes: 'Junho',
-            total: 'R$ 375,00',
-            saldo: 0.0,
-            economia: '0%'
-          },
-          {
-            value: false,
-            mes: 'Julho',
-            total: 'R$ 392,00',
-            saldo: 0,
-            economia: '2%'
-          },
-          {
-            value: false,
-            mes: 'Agosto',
-            total: 'R$ 408,00',
-            saldo: 6.5,
-            economia: '45%'
-          },
-          {
-            value: false,
-            mes: 'Setembro',
-            total: 'R$ 452,00',
-            saldo: 4.9,
-            economia: '22%'
-          }
-        ]
-      }
-    }
+    
   }
 </script>

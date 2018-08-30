@@ -1,9 +1,9 @@
 <template>
     <v-app pa-0 ma-0>
-        
+
         <v-toolbar color="indigo" dark fixed app pa-0 ma-0>
             <v-spacer />
-            <v-toolbar-title class="pa-0 ma-0" @click="$router.push('/')">Simples - Sistema Financeiro</v-toolbar-title>
+            <v-toolbar-title class="pa-0 ma-0" @click="$router.push('/dashboard')">Simples - Sistema Financeiro</v-toolbar-title>
             <v-spacer />
         </v-toolbar>
 
@@ -65,7 +65,7 @@
                     value="relatorio"
                     @click="$router.push('relatorio')"
                 >
-                    <span>Relatorio</span>
+                    <span>Historico</span>
                     <v-icon>class</v-icon>
                 </v-btn>
 

@@ -1,10 +1,8 @@
 <template>
-    <app-lancamento :type="0" title="Crédito" name="crédito" :categorias='categorias' @add="addCredito"/>
+    <app-lancamento :type="0" title="Crédito" name="crédito" :categorias='categorias' @add="() => {}"/>
 </template>
 
 <script>
-import { mapActions } from 'vuex'
-
 import Lancamento from '../components/Lancamento'
 
 export default {
@@ -19,13 +17,6 @@ export default {
                 'Receita com sobras de materiais',
                 'Receitas não operacionais/não recorrentes'
             ]
-        }
-    },
-    methods:{
-        ...mapActions(['addCredit']),
-
-        addCredito(credit){
-            this.addCredit(credit)
         }
     }
 }
